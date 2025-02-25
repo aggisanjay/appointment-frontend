@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'appointment-booking-5ji3.vercel.app'; // Adjust according to your backend
+const BASE_URL = 'https://appointment-booking-5ji3.vercel.app'; // Adjust according to your backend
 
 export const bookAppointment = (appointmentData) => axios.post(`${BASE_URL}/api/appointments`, appointmentData);
 export const fetchAppointments = () => axios.get(`${BASE_URL}/api/appointments`);
